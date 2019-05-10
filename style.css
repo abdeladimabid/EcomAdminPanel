@@ -1,0 +1,70 @@
+* {
+    font-family: 'Reem Kufi', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.full_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.header h1 {
+    padding: 1vw; 
+    font-size: 3.5vw;
+    color: linear-gradient(#ffcb85, #976f40);
+    background: -webkit-linear-gradient(#ffcb85, #976f40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header>img {
+    width: auto;
+    height: 6.5vw;
+    padding: 0% 1vw;
+}
+
+#deco {
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+.content {
+    color: wheat;
+    margin-top: 10vh;
+}
+
+#insert_form {
+    width: 50vw;
+}
+
+#insert_form input {
+    display: flex;
+    flex-direction: column;
+}
+
+#insert_form button {
+    margin-top: 2.5vh;
+}
+
+#admin_table {
+    width: 65vw;
+}
+
