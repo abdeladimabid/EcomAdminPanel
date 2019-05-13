@@ -5,9 +5,7 @@
 }
 
 body {
-    background: url(img/bg.png);
-    background-position: center;
-    background-size: cover;
+    background: #260C1C;
 }
 
 .full_container {
@@ -49,6 +47,19 @@ body {
 .content {
     color: wheat;
     margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.items {
+    height: 60vh;
+}
+
+.content_header {
+    padding-bottom: 2vh;
 }
 
 #insert_form {
@@ -68,3 +79,81 @@ body {
     width: 65vw;
 }
 
+
+
+#command {
+    width: 100%;
+}
+
+.card-body>h1 {
+    color: #260C1C;
+}
+
+.card-body>h2 {
+    font-size: 1.5vw;
+    color: rgb(87, 87, 97);
+}
+
+#price {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+}
+
+.deactivate {
+    pointer-events: none;
+}
+
+.car {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#update_form {
+    margin-right: 10px;
+    width: 30vw;
+}
+
+#update_form input {
+    display: flex;
+    flex-direction: column;
+}
+
+#update_form button {
+    margin-top: 2.5vh;
+}
+
+.slam2 {
+    margin-top: 7vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .car {
+        flex-direction: column;
+    }
+    .card {
+        margin-top: 20px;
+        width: 70vw;
+    }
+    #insert_form {
+        width: 70vw;
+    }
+}
+ 
+
+
+#admin_button, #index_button {
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
