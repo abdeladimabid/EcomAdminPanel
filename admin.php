@@ -4,10 +4,6 @@ $db = "store";
 $query = "SELECT items.item_id, items.name, items.description, items.price, categories.name AS category FROM items, categories WHERE categories.cat_id = items.cat_id";
 $con = connect_db($root, $username, $password, $db);
 
-
-if (isset($_GET['id'])) { }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +26,16 @@ if (isset($_GET['id'])) { }
             <img id="deco" src="img/relax.png" alt="icon">
             <h1>متجر العلم النافع</h1>
             <img src="img/relax.png" alt="icon">
+            <a href="index.php" id="index_button"> <i class="fas fa-home" style="color:white; font-size:2.5vw"></i></a>
         </div>
         <div class="content">
             <div class="table_container table-responsive">
+                <div class="content_header">
+                    <h1 style='display:inline;'>Liste des items</h1>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <form method='get' action='insert.php' style='display:inline;'>
+                        <button type='submit' class='btn btn-success'><i class="fas fa-plus"></i>&nbsp;&nbsp;Ajouter</button>
+                    </form>
+                </div>
                 <table class="table table-hover table-dark table-bordered" id="admin_table">
                     <thead>
                         <tr>
@@ -83,13 +86,7 @@ if (isset($_GET['id'])) { }
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            setInterval(function(){
-                location.reload();
-            },2000)
-        })
-    </script>
+  
 </body>
 
 </html>
